@@ -1,7 +1,7 @@
-var routing = angular.module('routing',['ui.router']);
+var routing = angular.module('routing', ['ui.router']);
 
 routing.config (function ($stateProvider, $urlRouterProvider){
-    $urlRouterProvider.otherwise('demo3.html');
+    $urlRouterProvider.otherwise('index.html');
 
     $stateProvider
 
@@ -17,9 +17,7 @@ routing.config (function ($stateProvider, $urlRouterProvider){
 
     .state('third',{
         url: 'app/views',
-        controller: function($scope) {
-            $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-        },
+        controller: 'namesController',
         templateUrl: 'app/views/thirdpage.html'
     })
 });

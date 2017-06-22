@@ -1,3 +1,3 @@
-routing.controller('dogNames', function($scope) {
-    $scope.names = ['Bernese', 'Husky', 'Goldendoodle'];
- });
+routing.controller('namesController', function ($scope) {
+    $scope.names = ['John', 'Paul', 'George','Ringo'];
+});
