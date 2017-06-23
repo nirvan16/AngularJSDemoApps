@@ -1,10 +1,17 @@
 <div>
+    <br/>
+    The following list of names has been accessed from a controller.
+    <br/>
 
-    The following list has been accessed from a controller.
+    <div class="section">
+        <h5>List of Names</h5>
+            <div class="divider"></div>
+        <p>
+            <ul>
+                <li ng-repeat="items in names">{{ items }}</li>
+            </ul>
+        </p>
 
-    <br/><br/>
-    LIST :
-
-    <li ng-repeat="items in names">{{ items }}</li>
+    </div>
 
 </div>
